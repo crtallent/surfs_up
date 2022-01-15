@@ -31,3 +31,7 @@ results = session.query(Measurement.date, Measurement.prcp).filter(Measurement.d
 ```
 results = session.query(Measurement.date, Measurement.prcp).filter(Measurement.date <= '2016-12-31', Measurement.date >= '2016-12-01').all()
 ```
+The following chart shows the precipitation amounts for the months of June and December, respectfully, showing a low amount of precipitation on average for both months:
+
+![June Precipitation Chart](https://github.com/crtallent/surfs_up/blob/main/Resources/June%20Chart.png)
+![Dec. Precipitation_Chart](https://github.com/crtallent/surfs_up/blob/main/Resources/Dec%20Chart.png)
