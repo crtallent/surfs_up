@@ -35,3 +35,7 @@ The following chart shows the precipitation amounts for the months of June and D
 
 ![June Precipitation Chart](https://github.com/crtallent/surfs_up/blob/main/Resources/June%20Chart.png)
 ![Dec. Precipitation_Chart](https://github.com/crtallent/surfs_up/blob/main/Resources/Dec%20Chart.png)
+
+While comfortable temperatures are very important, precipitation data also shows that most days have very little precipitation.  This could further indicate that Oahu is a good choice for a year-round surf and ice cream shop, as comfortable temperatures and low precipitation are common on this island, as shown by the data.  Further analysis could also be completed on temperatures for a year's worth of data, as shown below, indicating that the temperature is most often at 75°F or higher throughout the year:
+
+![2017 Temp Data](https://github.com/crtallent/surfs_up/blob/main/Resources/2017%20Temps.png)
