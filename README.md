@@ -20,4 +20,11 @@ The first step in this analysis was to download the SQL database with weather da
 
 ![Dec. Temperatures](https://github.com/crtallent/surfs_up/blob/main/Resources/December.png)
 
+## Surfs_Up Summary:
+
+The above data indicates that the temperatures in Oahu, Hawaii are warm enough to justify the existence of a year-round surf and ice cream shop in that area.  The lowest temperature appears in December, but it is still 60°F.  Further analysis on precipitation levels for both June and December could prove very useful information for the investors as well.  This can be done by filtering the Measurement table by precipitation data:
+
+```
+results = session.query(Measurement.date, Measurement.prcp).filter(Measurement.date >= prev_year).all()
+```
 
