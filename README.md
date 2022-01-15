@@ -14,6 +14,7 @@ The first step in this analysis was to download the SQL database with weather da
 * The average temperature for the month of June was 77°F, while the average temperature for December was 71°F.
 * The highest temperature for the month of June was 83°F, while the average temperature for December was 78°F.
 * The lowest temperature in the month of June was 71°F, while the lowest temperature in December was 60°F.
+* There were 191 total temperature readings for the month of June, and 200 total temperature readings for the month of December from the 9 stations providing this data.
 
 ![June Temperatures](https://github.com/crtallent/surfs_up/blob/main/Resources/June.png)
 
