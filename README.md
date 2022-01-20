@@ -18,7 +18,7 @@ The first step in this analysis was to download the SQL database with weather da
 
 ![June Temperatures](https://github.com/crtallent/surfs_up/blob/main/Resources/June.png)
 
-![Dec. Temperatures](https://github.com/crtallent/surfs_up/blob/main/Resources/December.png)
+![December Temperatures](https://github.com/crtallent/surfs_up/blob/main/Resources/December.png)
 
 ## Surfs_Up Summary:
 
