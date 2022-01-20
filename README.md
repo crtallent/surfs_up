@@ -9,12 +9,12 @@ In this project, we are exploring an investment idea for a surfing shop in Oahu,
 
 ## Surfs_Up Analysis Results:
 
-The first step in this analysis was to download the SQL database with weather data into Jupyter Notebook.  This data was then stored in SQLite, to allow for the analysis of the data in an effective manner.  We were then able to connect to the SQLite database with SQLAlchemy to assist in querying the database. Our first query reported average precipitation and temperature readings for the previous year.  This information was well-received, but the investors would like to look at two specific times of the year - June and December.  This will help determine whether a shop in Oahu will be profitable year-round.  The following data was retrieved and analyzed for the months of June and December:
+The first step in this analysis was to download the SQL database with weather data into Jupyter Notebook.  This data was then stored in SQLite, to allow for the analysis of the data in an effective manner.  We were then able to connect to the SQLite database with SQLAlchemy to assist in querying the database. Our first query reported average precipitation and temperature readings for the previous year.  This information was well-received, but the investors would like to look at two specific times of the year - June and December.  This will help determine whether a shop in Oahu will be profitable year-round.  The following data was retrieved and analyzed for the months of June and December between the years of 2010 and 2017:
 
-* The average temperature for the month of June was 77°F, while the average temperature for December was 71°F.
-* The highest temperature for the month of June was 83°F, while the average temperature for December was 78°F.
-* The lowest temperature in the month of June was 71°F, while the lowest temperature in December was 60°F.
-* There were 191 total temperature readings for the month of June, and 200 total temperature readings for the month of December from the 9 stations providing this data.
+* The average temperature for the month of June was 75°F, while the average temperature for December was 71°F.
+* The highest temperature for the month of June was 85°F, while the highest temperature for December was 83°F.
+* The lowest temperature in the month of June was 64°F, while the lowest temperature in December was 56°F.
+* There were 1,700 total temperature readings for the month of June, and 1,517 total temperature readings for the month of December from the 9 stations providing this data.
 
 ![June Temperatures](https://github.com/crtallent/surfs_up/blob/main/Resources/June.png)
 
@@ -22,7 +22,7 @@ The first step in this analysis was to download the SQL database with weather da
 
 ## Surfs_Up Summary:
 
-The above data indicates that the temperatures in Oahu, Hawaii are warm enough to justify the existence of a year-round surf and ice cream shop in that area.  The lowest temperature appears in December, but it is still 60°F.  Further analysis on precipitation levels for both June and December could prove very useful information for the investors as well.  This can be done by filtering the Measurement table by precipitation data:
+The above data indicates that the temperatures in Oahu, Hawaii may be warm enough to justify the existence of a year-round surf and ice cream shop in that area.  The lowest temperature appears in December, but it is still 60°F.  Analysis of ice cream sales and surfing activities in relation to temperature would be useful in making further decisions.  Further analysis on precipitation levels for both June and December could prove very useful information for the investors as well.  This can be done by filtering the Measurement table by precipitation data:
 
 ```
 results = session.query(Measurement.date, Measurement.prcp).filter(Measurement.date <= '2017-06-30', Measurement.date >= '2017-06-01').all()
